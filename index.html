@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>length/weight converter0</title>
+    <link rel="stylesheet" href="/bootstrap.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-5">
+                <h1 class="display-4 text-center">length Converter</h1>
+                <form >
+
+                    <div class="form-group">
+                        <select id="inputselect" class="custom-select mb-3">
+                            <option selected=''>open to select input type</option>
+                            <option value="1">Kilometers</option>
+                            <option value="2">Miles</option>
+                            <option value="3">Meter</option>
+                            <option value="4">Feet</option>
+
+                        </select>
+                        <input id="kminput" type="number" class="form-control form-control-lg" placeholder="enter Value">
+                    </div>
+                </form>
+                <div id="output">
+                    <div id="kmop" class="card bg-warning mb-3">
+                        <div class="card-text mx-1">
+                            <h3>Kilometers:</h3>
+                        </div>
+                        <div id="kmsoutput" class="card-text mx-1"></div>
+                    </div>
+                    <div id="milop" class="card bg-primary mb-3">
+                        <div class="card-text mx-1">
+                            <h3>Miles:</h3>
+                        </div>
+                        <div id="milesoutput" class="card-text mx-1"></div>
+                    </div>
+                    <div id="metop" class="card bg-danger mb-3">
+                        <div class="card-text mx-1">
+                            <h3 class="card-text mx-1">meters:</h3>
+                        </div>
+                        <div id="meteroutput"></div>
+                    </div>
+                    <div id="ftop" class="card bg-success mb-3">
+                        <div class="card-text mx-1">
+                            <h3 class="card-text mx-1">feet:</h3>
+                        </div>
+                        <div id="feetoutput"></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
